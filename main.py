@@ -14,7 +14,7 @@ def index():
 
 
 @app.route("/riak", defaults={'key': None}, methods=['GET', 'POST'])
-@app.route("/riak/<key>", methods=['GET'])
+@app.route("/riak/<key>", methods=['GET','DELETE'])
 def riak_route(key):
     if request.method == 'POST':
 
@@ -38,7 +38,7 @@ def riak_route(key):
         if bucket.get(key).exists:
             fetched = bucket.get(key)
             fetched.delete()
-            return jsonify(fetched)
+            return jsonify({'message':'deleted'})
         else:
             return jsonify({'message': key + ' not found'}), 404
     else:

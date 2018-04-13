@@ -6,6 +6,8 @@ pipenv shell
 
 pipenv install flask
 
+pipenv install marshmallow
+
 pipenv install riak
 
 export FLASK_APP=main.py
