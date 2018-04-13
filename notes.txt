@@ -1,0 +1,42 @@
+pipenv --python 3.6
+pipenv shell
+
+# riak Database
+riak start
+riak console
+sudo riak attach
+q().
+riak ping
+riak-admin test
+curl -v http://127.0.0.1:8098/types/default/props
+
+
+Ctrl-G q to quit
+
+sudo riak-admin test
+sudo riak-admin test
+
+riak-admin diag
+
+
+pip install riak
+http://basho.github.io/riak-python-client/index.html
+
+
+riak is simialar to couchdb
+http
+erlang
+
+mapreduce functions
+erlang and javascript
+linux only
+
+bucket/key/value
+lucene full-text search engine
+mapreduce functions
+
+wtf is lucene?
+
+https://www.youtube.com/watch?v=GNi3WuXPa1M
+https://www.youtube.com/watch?v=11hYuFmUWPM
+https://www.youtube.com/watch?v=TYodLkHp1Uo
