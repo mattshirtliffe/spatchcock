@@ -40,3 +40,10 @@ wtf is lucene?
 https://www.youtube.com/watch?v=GNi3WuXPa1M
 https://www.youtube.com/watch?v=11hYuFmUWPM
 https://www.youtube.com/watch?v=TYodLkHp1Uo
+
+
+How the fuck do you delete a bucket?
+Don't tell me you have to get all the keys and iterate over!
+for crime_id in crime_bucket.get_keys():
+    fetched = crime_bucket.get(crime_id)
+    fetched.delete()

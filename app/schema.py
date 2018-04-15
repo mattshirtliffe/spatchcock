@@ -1,7 +1,8 @@
-from marshmallow import Schema, fields
+from marshmallow import Schema, fields, post_load
+
 
 class CrimeSchema(Schema):
-    crime_id = fields.Str()
+    crime_id = fields.Str(required=True)
     month = fields.Str()
     latitude = fields.Str()
     longitude = fields.Str()

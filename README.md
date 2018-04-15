@@ -21,8 +21,14 @@ flask run
 
 # Note
 https://www.police.uk/south-yorkshire/KD/crime/+ovSYlx/stats/
+
 Click Download crime data for this area as a CSV file for test data
 
+I also made the keys lowercase
+crime_id,month,latitude,longitude,location,category,outcome_status
+
+# riak libary
+https://basho.github.io/riak-python-client/
 
 
 

@@ -8,3 +8,4 @@ with open('crime_data.csv', 'r') as csvfile:
     for row in crime_reader:
         r = requests.post('http://127.0.0.1:5000/crime', json=row)
         print(r.status_code)
+        print(r.text)

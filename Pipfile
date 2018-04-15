@@ -15,6 +15,7 @@ flask = "*"
 riak = "*"
 marshmallow = "*"
 requests = "*"
+gunicorn = "*"
 
 
 [requires]
