@@ -12,6 +12,7 @@ crime_bucket = client.bucket('crime')
 
 # bucket = client.bucket_type('crime').bucket('category')
 
+
 @crime.route("/crime", defaults={'crime_id': None}, methods=['GET', 'POST'])
 @crime.route("/crime/<crime_id>", methods=['GET','DELETE'])
 def crime_route(crime_id):
