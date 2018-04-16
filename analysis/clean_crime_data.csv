@@ -1,3 +1,4 @@
+crime_id,month,latitude,longitude,location,category,outcome_status
 1168871c162ce9a532d7ea66e438ac1310ed4ea35a59391811ddf2358771b7c2,2018-02-01,53.378546,-1.466947,On or near Howard Lane,Bicycle theft,Investigation complete; no suspect identified
 2694f91face669bbc3ae567852169e9ff27fe0f17c21af8afd4cc9a0d266643c,2018-02-01,53.384673,-1.508125,On or near Crookes,Bicycle theft,Under investigation
 cf72a1338c5f7d53754e367227766e56bc47d200b5b0efd2ed3eae23205c57dd,2018-02-01,53.378105,-1.464833,On or near Paternoster Row,Bicycle theft,Investigation complete; no suspect identified
