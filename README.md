@@ -21,6 +21,7 @@ flask run
 
 # Run in Docker
 docker build -f Dockerfile -t matthewshirtliffecouk/spatchcock .
+
 docker run -d -p 5000:5000 --net="host" --name spatchcock  matthewshirtliffecouk/spatchcock
 
 # Note
