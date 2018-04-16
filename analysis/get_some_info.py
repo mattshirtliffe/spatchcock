@@ -1,5 +1,7 @@
 import csv
 
+import pygal as pygal
+
 
 def get_crime_data_from_csv():
     crimes = []
@@ -31,11 +33,21 @@ def get_number_of_crimes_by_category(crimes):
         else:
             crime_by_category[crime['category']] = 1
     print(crime_by_category)
+    return crime_by_category
+
+def create_pie_chart(crimes_by_category):
+    pie_chart = pygal.Pie()
+    pie_chart.title = 'Crimes by Category'
+    for key, value in crimes_by_category.items():
+        pie_chart.add(key, value)
+    pie_chart.render_to_file('crimes_by_category_pie.svg')
+    print('pie chart created')
 
 if __name__ == '__main__':
     # get all values in csv
     crimes = get_crime_data_from_csv()
-    get_number_of_crimes_by_category(crimes)
-    get_categories(crimes)
+    crimes_by_category = get_number_of_crimes_by_category(crimes)
+    create_pie_chart(crimes_by_category)
+    # get_categories(crimes)
 
 

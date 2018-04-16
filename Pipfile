@@ -16,6 +16,7 @@ riak = "*"
 marshmallow = "*"
 requests = "*"
 gunicorn = "*"
+pygal = "*"
 
 
 [requires]
